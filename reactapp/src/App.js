@@ -1,21 +1,59 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React, { useState } from "react";
 import Layout from "./Hoc/Layout/Layout";
 import Home from "./Pages/Home/Home";
+import Async from "./Pages/Async/Aysnc";
+import ReactPage from "./Pages/ReactPage/ReactPage";
+import Node from "./Pages/Node/Node";
 import "./App.css";
 
 const App = () => {
-  let routes = (
-    <Switch>
-      <Route path="/" exact>
-        <Home />
-      </Route>
-    </Switch>
-  );
+  const [currStep, setCurrStep] = useState(1);
+
+  let routes = null;
+
+  switch (currStep) {
+    case 1:
+      routes = <Home />;
+      break;
+    case 2:
+      routes = <Async />;
+      break;
+    case 3:
+      routes = <ReactPage />;
+      break;
+    case 4:
+      routes = <Node />;
+      break;
+    default:
+      routes = <Home />;
+  }
+
   return (
     <div>
       <Layout>
-        <Router>{routes}</Router>
+        {routes}
+        <div className="buttonContainer">
+          {currStep > 1 ? (
+            <div className="prev">
+              <button
+                className="butPrev"
+                onClick={() => setCurrStep(currStep - 1)}
+              >
+                Prev
+              </button>
+            </div>
+          ) : null}
+          {currStep < 4 ? (
+            <div className="next">
+              <button
+                className="butNext"
+                onClick={() => setCurrStep(currStep + 1)}
+              >
+                Next
+              </button>
+            </div>
+          ) : null}
+        </div>
       </Layout>
     </div>
   );

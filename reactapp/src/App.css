@@ -1,3 +1,31 @@
 .App {
   text-align: center;
 }
+
+button:hover,
+button:active {
+  background: #ecd610;
+  border-color: #0e0206;
+}
+
+.butPrev {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.butNext {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.prev {
+}
+
+.next {
+  text-align: right;
+}
+
+.buttonContainer {
+}
