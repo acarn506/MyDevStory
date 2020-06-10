@@ -1,0 +1,62 @@
+.reactPageCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillsContainer {
+  display: grid;
+  width: 652px;
+  height: 334px;
+  grid-template-columns: repeat(3, 185px);
+  grid-template-rows: repeat(3, 110px);
+
+  justify-content: space-around;
+  align-items: center;
+  color: #faf7f7;
+  background-color: #4a4646;
+  border-radius: 3px;
+}
+
+.lan {
+  display: flex;
+  flex-direction: column;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  width: 184px;
+  height: 62px;
+  text-align: center;
+  z-index: 1;
+
+  background: #bc4ef0;
+  border-radius: 4px;
+}
+
+.rate {
+  left: 40.52%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  width: 92px;
+  height: 62px;
+  z-index: 2;
+  margin-top: 5px;
+
+  background: #63ca24;
+  border-radius: 4px;
+}
+
+.level {
+  left: 54.25%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  width: 92px;
+  height: 62px;
+  z-index: 3;
+
+  background: #f1c115;
+  border-radius: 4px;
+}

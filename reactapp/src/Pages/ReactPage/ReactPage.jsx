@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ItemList from "./ItemList/ItemList";
+import "./ReactPage.css";
 
 class ReactPage extends Component {
   state = {
@@ -19,18 +20,22 @@ class ReactPage extends Component {
   render() {
     let skills = this.state.skills.map((item, i) => {
       return (
-        <div key={item + i}>
+        <div key={item + i} className="lan">
           {item.language}
-          <span key={item + i}>{item.rate}</span>
-          <span key={item + i}>{item.level}</span>
+          <span key={item} className="rate">
+            {item.rate}
+          </span>
+          <span key={item + i} className="level">
+            {item.level}
+          </span>
         </div>
       );
     });
     return (
-      <div>
+      <div className="reactPageCont">
         <h1>React</h1>
         {/*<ItemList skills={this.state.skills} /> */}
-        {skills}
+        <div className="skillsContainer">{skills}</div>
       </div>
     );
   }
