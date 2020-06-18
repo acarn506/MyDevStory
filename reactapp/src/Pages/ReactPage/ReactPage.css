@@ -4,7 +4,9 @@
   align-items: center;
 }
 
-.skillsContainer {
+/************ Full Object Window ************/
+
+.skillContainer {
   display: grid;
   width: 652px;
   height: 334px;
@@ -48,7 +50,7 @@
   border-radius: 4px;
 }
 
-.level {
+.lev {
   left: 54.25%;
   right: 0%;
   top: 0%;
@@ -59,4 +61,214 @@
 
   background: #f1c115;
   border-radius: 4px;
+}
+
+/************ Level Window ************/
+
+.levelContainer {
+  display: grid;
+  width: 652px;
+  height: 334px;
+
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    ". . . ."
+    "nodejs c . ."
+    "mongodb python html5 ."
+    "git react javascript css"
+    "level2 level0 level1 level3";
+  gap: 0px 1px;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#level {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.level0 {
+  width: 152px;
+  height: 35px;
+  left: 21px;
+  top: 273px;
+
+  background: #f1c115;
+  border-radius: 4px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #fffbfb;
+  grid-area: level0;
+}
+
+.level1 {
+  width: 152px;
+  height: 35px;
+  left: 21px;
+  top: 273px;
+
+  background: #f1c115;
+  border-radius: 4px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #fffbfb;
+  grid-area: level1;
+}
+
+.level2 {
+  width: 152px;
+  height: 35px;
+  left: 21px;
+  top: 273px;
+
+  background: #f1c115;
+  border-radius: 4px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #fffbfb;
+  grid-area: level2;
+}
+
+.level3 {
+  width: 152px;
+  height: 35px;
+  left: 21px;
+  top: 273px;
+
+  background: #f1c115;
+  border-radius: 4px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #fffbfb;
+  grid-area: level3;
+}
+
+.nodejs {
+  grid-area: nodejs;
+  place-self: end center;
+}
+
+.mongodb {
+  grid-area: mongodb;
+  place-self: end center;
+}
+
+.git {
+  grid-area: git;
+  place-self: end center;
+}
+
+.python {
+  grid-area: python;
+  place-self: end center;
+}
+
+.react {
+  grid-area: react;
+  place-self: end center;
+}
+
+.c {
+  grid-area: c;
+  place-self: end center;
+}
+
+.javascript {
+  grid-area: javascript;
+  place-self: end center;
+}
+
+.html5 {
+  grid-area: html5;
+  place-self: end center;
+}
+
+.css {
+  grid-area: css;
+  place-self: end center;
+}
+
+/************ Button Controls ************/
+.buttonControls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 393px;
+  height: 83px;
+
+  background: #969595;
+  border-radius: 4px;
+  margin-top: 25px;
+}
+
+.buttonA {
+  width: 35px;
+  height: 32px;
+  border-radius: 50%;
+
+  background: #e97d1a;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.buttonA:hover {
+  background-color: #0cf33f;
+}
+
+.buttonB {
+  width: 35px;
+  height: 32px;
+  border-radius: 50%;
+
+  background: #0fb3e7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+}
+
+.buttonB:hover {
+  background-color: #0cf33f;
+}
+
+.buttonC {
+  width: 35px;
+  height: 32px;
+  border-radius: 50%;
+
+  background: #da3cb7;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.buttonC:hover {
+  background-color: #0cf33f;
 }

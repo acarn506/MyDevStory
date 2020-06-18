@@ -3,7 +3,7 @@ import "./Item.css";
 
 const Item = props => {
   return (
-    <div className="itemContainer">
+    <div className={`itemContainer ${props.name}`}>
       <h4>{props.language}</h4>
     </div>
   );

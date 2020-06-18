@@ -1,5 +1,9 @@
 .itemContainer {
-  background-color: blueviolet;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #e859ff;
   width: 130px;
   height: 50px;
   font-size: 20px;
