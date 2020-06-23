@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ItemList from "./ItemList/ItemList";
 import Item from "./ItemList/Item/Item";
+import Dropdown from "./Dropdown/Dropdown";
 import "./ReactPage.css";
 
 class ReactPage extends Component {
@@ -99,19 +100,29 @@ class ReactPage extends Component {
         return <Item key={lan + i} language={lan} name={`${lan}`} />;
       });
 
+    //Conditional Display
     let show = this.state.show;
     let display = null;
 
     if (show === "plain") {
-      display = <ItemList skills={this.state.skills} />;
+      display = (
+        <div className="lanContainer">
+          <ItemList skills={this.state.skills} />
+        </div>
+      );
     } else if (show === "graph") {
       display = (
-        <div className="levelContainer">
-          {familiar}
-          {proficient}
-          {excellent}
-          {expert}
-          {levels}
+        <div>
+          <div className="levelContainer">
+            {familiar}
+            {proficient}
+            {excellent}
+            {expert}
+            {levels}
+          </div>
+          <Dropdown>
+            <p>Testing!</p>
+          </Dropdown>
         </div>
       );
     } else {
@@ -121,30 +132,23 @@ class ReactPage extends Component {
     return (
       <div className="reactPageCont">
         <h1>React</h1>
-        {/*<ItemList skills={this.state.skills} /> 
-        <div className="skillContainer">skillsList</div>
-        <div className="levelContainer">
-          {familiar}
-          {proficient}
-          {excellent}
-          {expert}
-          {levels}
-        </div>
-        */}
         {display}
         <div className="buttonControls">
           <button
             className="buttonA"
             onClick={() => this.showHandler("standard")}
           ></button>
+          <h4>ButtonA</h4>
           <button
             className="buttonB"
             onClick={() => this.showHandler("plain")}
           ></button>
+          <h4>ButtonB</h4>
           <button
             className="buttonC"
             onClick={() => this.showHandler("graph")}
           ></button>
+          <h4>ButtonC</h4>
         </div>
       </div>
     );
