@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Layout from "./Hoc/Layout/Layout";
 import Home from "./Pages/Home/Home";
-import Async from "./Pages/Async/Aysnc";
+import Async from "./Pages/Async/Async";
 import ReactPage from "./Pages/ReactPage/ReactPage";
 import Node from "./Pages/Node/Node";
 import "./App.css";

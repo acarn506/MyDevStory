@@ -1,0 +1,13 @@
+-- A timeline showcaseing my projects and learning througth the last several years.
+
+-- Structure: bramch of some sort
+
+-- The main branch will be running a for loop inside of a async function
+
+-- several sub branches will be running async in betwwen the main branch
+
+-- This way the call stack will be able to interleave sections of the main branch with the sub branches
+
+-- Possibly 
+    - main branch is the things i have learned
+    - sub branch project where i used the things i've learned

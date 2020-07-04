@@ -1,0 +1,25 @@
+:root {
+  --main-bg-color: #29909e;
+  --main-branch-color: #896753;
+  --sub-branch-color: #a07954;
+}
+
+.mainCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-bg-color);
+}
+
+.displayCont {
+  display: flex;
+
+  align-items: center;
+  width: 700px;
+  height: 400px;
+}
+
+.branch {
+  width: 137px;
+  height: 31px;
+}
