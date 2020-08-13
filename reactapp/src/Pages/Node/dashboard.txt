@@ -1,0 +1,16 @@
+Stats 
+ - projects
+ - team projects
+ - languages 
+
+Past Projects 
+-Trivia Game
+-SI App
+-algo interact
+
+-C++
+ -boggle 
+ -evil hangman 
+
+ Warzone Stats
+ -
