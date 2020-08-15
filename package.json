@@ -1,0 +1,33 @@
+{
+  "name": "mydevstory",
+  "version": "1.0.0",
+  "description": "A website featuring my road to becoming a developer, while showcasing what i've learned along the way.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acarn506/MyDevStory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acarn506/MyDevStory/issues"
+  },
+  "homepage": "https://github.com/acarn506/MyDevStory#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^2.0.4"
+  }
+}
