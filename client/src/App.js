@@ -3,7 +3,7 @@ import Layout from "./Hoc/Layout/Layout";
 import Home from "./Pages/Home/Home";
 import Async from "./Pages/Async/Async";
 import ReactPage from "./Pages/ReactPage/ReactPage";
-import Node from "./Pages/Node/Node";
+import CODProfile from "./Pages/CODProfile/CODProfile";
 import "./App.css";
 
 const App = () => {
@@ -22,7 +22,7 @@ const App = () => {
       routes = <ReactPage />;
       break;
     case 4:
-      routes = <Node />;
+      routes = <CODProfile />;
       break;
     default:
       routes = <Home />;

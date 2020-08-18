@@ -10,7 +10,7 @@ router.get("/:platform/:gamertag", async (req, res) => {
     const { platform, gamertag } = req.params;
 
     const response = await fetch(
-      `${process.env.TRACKER_API_URL}/profile/${platform}/${gamertag}?TRN-Api-Key=d217d2cc-8441-4639-83db-ee053fc8f697`,
+      `${process.env.TRACKER_API_URL}/profile/${platform}/${gamertag}?TRN-Api-Key=${process.env.TRACKER_API_KEY}`,
       { headers }
     );
     const data = await response.json();

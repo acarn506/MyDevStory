@@ -8,7 +8,7 @@ const Home = props => {
       <div>
         <ul>
           <li>React</li>
-          <li>node.js</li>
+          <li>Warzone Stats</li>
           <li>Async/Promise</li>
         </ul>
       </div>

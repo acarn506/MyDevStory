@@ -18,7 +18,7 @@ if (process.env.NODE_ENV === "development") {
 //profile routes
 app.use("/api/v1/profile", require("./routes/profile.js"));
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 6000;
 
 app.listen(port, () => {
   console.log(
