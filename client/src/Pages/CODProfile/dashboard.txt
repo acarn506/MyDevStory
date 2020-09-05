@@ -13,4 +13,11 @@ Past Projects
  -evil hangman 
 
  Warzone Stats
- -
+ -gamertag name
+ -wins 
+ -kd
+ -damage per Game
+ -kills 
+ -deaths
+ -downs
+ -score per game

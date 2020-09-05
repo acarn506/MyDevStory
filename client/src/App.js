@@ -13,7 +13,7 @@ const App = () => {
 
   switch (currStep) {
     case 1:
-      routes = <Home />;
+      routes = <CODProfile />;
       break;
     case 2:
       routes = <Async />;

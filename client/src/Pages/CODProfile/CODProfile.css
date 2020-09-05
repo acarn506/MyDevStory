@@ -1,0 +1,129 @@
+:root {
+  --main-bg-color: #979494;
+  --stat-bg-color: #ffffff;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #133b77;
+}
+
+.container {
+  position: relative;
+  width: 565px;
+  height: 371px;
+  border-radius: 0.4em;
+
+  background: #d1cccc;
+}
+
+.wins {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 78px;
+  left: 86px;
+  top: 26px;
+  background-color: var(--stat-bg-color);
+  border-radius: 0.2em;
+
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 32px;
+  line-height: 37px;
+}
+
+.kd {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 78px;
+  left: 307px;
+  top: 26px;
+  background-color: var(--stat-bg-color);
+  border-radius: 0.2em;
+
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 32px;
+  line-height: 37px;
+}
+
+.kills {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 119px;
+  height: 89px;
+  left: 65px;
+  top: 140px;
+
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.deaths {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 119px;
+  height: 89px;
+  left: 223px;
+  top: 140px;
+
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.downs {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 119px;
+  height: 89px;
+  left: 381px;
+  top: 140px;
+
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+.damageGame {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 170px;
+  height: 78px;
+  left: 65px;
+  top: 265px;
+
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+}
+
+.scoreGame {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 170px;
+  height: 78px;
+  left: 335px;
+  top: 265px;
+
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+}
